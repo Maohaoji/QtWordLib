@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtWordLibClass</class>
+ <widget class="QMainWindow" name="QtWordLibClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>763</width>
+    <height>495</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>词句库</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3" stretch="25,1">
+    <property name="spacing">
+     <number>15</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <property name="topMargin">
+     <number>9</number>
+    </property>
+    <item>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="3,5">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>词句库结构：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTreeWidget" name="treeWord">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>56</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="headerHidden">
+           <bool>true</bool>
+          </property>
+          <column>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="BtnAddGTree">
+            <property name="text">
+             <string>添加根分支</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnAddTree">
+            <property name="text">
+             <string>添加分支</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnEdtTree">
+            <property name="text">
+             <string>修改项</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnDelTree">
+            <property name="text">
+             <string>删除项</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>词句：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listWordItem">
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="BtnAddWord">
+            <property name="text">
+             <string>添加词句</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnEdtWord">
+            <property name="text">
+             <string>修改词句</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnDelWord">
+            <property name="text">
+             <string>删除词句</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnUp">
+            <property name="text">
+             <string>上移</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnDown">
+            <property name="text">
+             <string>下移</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,0,5,0,0,1">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>结果:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="textEditResult">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="BtnCopy">
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="BtnQuit">
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>763</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>库管理</string>
+    </property>
+    <addaction name="act_AddGTree"/>
+    <addaction name="act_AddTree"/>
+    <addaction name="act_EdtTree"/>
+    <addaction name="act_DelTree"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>词管理</string>
+    </property>
+    <addaction name="act_AddList"/>
+    <addaction name="act_EdtList"/>
+    <addaction name="act_DelList"/>
+    <addaction name="act_uplist"/>
+    <addaction name="act_downlist"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="act_AddGTree">
+   <property name="text">
+    <string>添加根分支</string>
+   </property>
+  </action>
+  <action name="act_AddTree">
+   <property name="text">
+    <string>添加分支</string>
+   </property>
+  </action>
+  <action name="act_EdtTree">
+   <property name="text">
+    <string>修改项</string>
+   </property>
+  </action>
+  <action name="act_DelTree">
+   <property name="text">
+    <string>删除项</string>
+   </property>
+  </action>
+  <action name="act_AddList">
+   <property name="text">
+    <string>添加词句</string>
+   </property>
+  </action>
+  <action name="act_EdtList">
+   <property name="text">
+    <string>修改词句</string>
+   </property>
+  </action>
+  <action name="act_DelList">
+   <property name="text">
+    <string>删除词句</string>
+   </property>
+  </action>
+  <action name="act_uplist">
+   <property name="text">
+    <string>上移词句</string>
+   </property>
+  </action>
+  <action name="act_downlist">
+   <property name="text">
+    <string>下移词句</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qtwordlib.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>treeWord</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>QtWordLibClass</receiver>
+   <slot>QuerylistItemAttr(QTreeWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWordItem</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>QtWordLibClass</receiver>
+   <slot>ShowListMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>303</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWordItem</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>QtWordLibClass</receiver>
+   <slot>PresentResult(QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>528</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWord</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>QtWordLibClass</receiver>
+   <slot>ShowTreeMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>358</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnCopy</sender>
+   <signal>clicked()</signal>
+   <receiver>QtWordLibClass</receiver>
+   <slot>OnInsert()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>576</x>
+     <y>483</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>645</x>
+     <y>467</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnQuit</sender>
+   <signal>clicked()</signal>
+   <receiver>QtWordLibClass</receiver>
+   <slot>OnQuit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>613</x>
+     <y>478</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>643</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>QuerylistItemAttr(QTreeWidgetItem*)</slot>
+  <slot>ShowListMenu(QPoint)</slot>
+  <slot>PresentResult(QListWidgetItem*)</slot>
+  <slot>ShowTreeMenu(QPoint)</slot>
+  <slot>OnInsert()</slot>
+  <slot>OnQuit()</slot>
+ </slots>
+</ui>
